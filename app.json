@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Discover Pakistan",
+    "slug": "discover_pakistan_hd_tv",
+    "platforms": ["ios", "android"],
+    "version": "1.0.9",
+    "icon": "./src/assets/images/appIcon.png",
+    "facebookScheme": "fb1620949568083766",
+    "scheme": "mycoolredirect",
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "ts", "tsx", "svg"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-facebook",
+        {
+          "userTrackingPermission": false
+        }
+      ]
+    ],
+
+    "ios": {
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.388807787471-tda2do81ohsrltib167n63nb9sbk9f6i"
+        }
+      },
+      "bundleIdentifier": "tv.discoverpakistan.dp",
+      "buildNumber": "1.6",
+      "supportsTablet": false,
+      "usesAppleSignIn": true,
+      "usesIcloudStorage": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The application requires access to your photos to allow you to upload pictures."
+      }
+    },
+    "android": {
+      "package": "com.app.discoverpakistan",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyDNO5Y1K2VoIlsi9l3KahJ8ZvHEt2qxn60",
+          "certificateHash": "F06DFFF42750425FF0D00D714A72986FD192CD9A"
+        }
+      },
+      "permissions": ["location"],
+      "versionCode": 29
+    },
+
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#fff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "description": "Discover Pakistan Application is Updated Now - Aug 2021"
+  }
+}
